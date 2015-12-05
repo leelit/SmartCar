@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="Designed by EIMember Leelit" />
+
+    <Button
+        android:id="@+id/centerButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/up"
+        android:enabled="false"
+        android:text="中"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/centerButton"
+        android:layout_alignLeft="@id/centerButton"
+        android:background="@drawable/up"
+        android:text="上" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/centerButton"
+        android:layout_below="@id/centerButton"
+        android:background="@drawable/down"
+        android:text="下" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toLeftOf="@id/centerButton"
+        android:background="@drawable/left"
+        android:text="左" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toRightOf="@id/centerButton"
+        android:background="@drawable/right"
+        android:text="右" />
+
+</RelativeLayout>
